@@ -1,0 +1,21 @@
+{
+  "functions": {
+    "source": "functions",
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
+    ]
+  },
+  "database": {
+    "rules": "y"
+  },
+  "firestore": {
+    "rules": "y",
+    "indexes": "y"
+  },
+  "storage": {
+    "rules": "y"
+  },
+  "remoteconfig": {
+    "template": "y"
+  }
+}
